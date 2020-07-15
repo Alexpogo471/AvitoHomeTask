@@ -71,20 +71,14 @@ public class AvitoTest {
         StringBuilder printer2 = new StringBuilder();
         StringBuilder printer3 = new StringBuilder();
 
-        for (WebElement printer: printersPrice) {
             printer1.append(printersPrice.get(2).findElement(By.xpath("./span[@data-marker='item-price']")).getText());
             printer2.append(printersPrice.get(3).findElement(By.xpath("./span[@data-marker='item-price']")).getText());
             printer3.append(printersPrice.get(4).findElement(By.xpath("./span[@data-marker='item-price']")).getText());
-            break;
 
-        }
-
-        for (WebElement printer: printersName) {
             printer1.append(" ").append(printersName.get(2).findElement(By.xpath("./a[@target='_blank']")).getText());
             printer2.append(" ").append(printersName.get(3).findElement(By.xpath("./a[@target='_blank']")).getText());
             printer3.append(" ").append(printersName.get(4).findElement(By.xpath("./a[@target='_blank']")).getText());
-            break;
-        }
+
 
         System.out.println(printer1);
         System.out.println(printer2);
